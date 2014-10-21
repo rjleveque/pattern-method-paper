@@ -1,0 +1,71 @@
+thisrun_directory is: CSZBe01r07 
+
+minimum tidal stage above MLLW (meters) used for bins: -0.75 
+
+maximum tidal stage above MLLW (meters) used for bins: 2.75 
+
+minimum tidal stage above MSL (meters) used for bins: -1.88 
+
+maximum tidal stage above MSL (meters) used for bins: 1.62 
+
+MSL = MLLW + -1.13 
+
+number of bins used: 70 
+
+The file where predicted gauge data is: 
+ predicted.npy 
+
+The file for Probability Pattern Density: 
+ pdf_pattern.txt 
+
+The file for Cumulative Pattern Distribution of Exceedance: 
+ cumulative_pattern.txt 
+
+The plot file for Probability Pattern Density: 
+ pdf_pattern.png 
+
+The plot file for Cumulative Pattern Distribution of Exceedance: 
+ cumulative_pattern.png 
+
+waves_indices are: 
+ [[0, 17]] 
+
+waves_adjust: 
+ [0.0] 
+
+
+max and min of predicted values ref to MLLW are 2.63 and -0.7 
+
+max and min of predicted values ref to MSL are 1.5 and -1.83 
+
+ 
+The number of waves found was: 1 
+
+The interval_length used in makebins is: 18 
+
+The binsize is: 0.05 
+
+totalnumber of non-nan data is: 526563 
+
+sum of pdfhist is: 526563.0 
+
+sum of chist is: 20378361.0 
+
+sum of pdf[:] is: 1.0 
+
+totalnumber is: 526563 
+
+chist[0] is (matches totalnumber): 526563.0 
+
+mean(MLLW) and standard deviation of pdf are 1.16003540887 and 0.63440761522 
+
+mean(MSL) and standard deviation of pdf are 0.0300354088685 and 0.63440761522 
+
+A used was: 9.547774 
+
+w0_MOF mean of G-method tide cumulative was: 0.179087275232 
+
+sigmap_MOF std of G-method tide cumulative was: 0.496085596269 
+
+Gplot was: True 
+

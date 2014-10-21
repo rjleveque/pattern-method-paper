@@ -1,0 +1,45 @@
+thisrun_directory is: CSZBe01r07 
+
+Uplift(<0) or Subsidence(>0) was: 1.239803 
+
+The max gauge value above MHW was: 8.507971 
+
+Tsunami amplitude was: 9.547774 
+
+The number of waves before popping is : 10 
+
+The Pattern graph is: pattern.png 
+
+The sealevel used for the Gauge data to make Pattern was: 0.97 
+
+The number of waves found was: 10 
+
+The highest Gauge data above MHW in each wave: 
+ [0.20000000000000001, 8.5079709999999995, 0.30334850000000002, 0.6308279, 2.7147220000000001, 4.7217330000000004, 2.474993, 0.53914890000000004, 0.27952569999999999, 1.702868] 
+
+The waves_indices (before popping and starting at 0) are:
+waves_indices=[[0, 0], [19, 36], [37, 37], [43, 43], [43, 65], [85, 109], [119, 129], [150, 152], [153, 157], [166, 180]] 
+
+The waves_adjust before popping is: 
+waves_adjust=[8.3079710000000002, 0.0, 8.2046224999999993, 7.8771430999999996, 5.7932489999999994, 3.7862379999999991, 6.032978, 7.9688220999999997, 8.2284452999999989, 6.805102999999999] 
+
+poplist is: 
+[0, 2, 3, 4, 5, 6, 7, 8, 9] 
+
+FINAL RESULTS AFTER POPPING UNNECESSARY WAVES: 
+
+Popping unnecessary waves was done: 
+
+The number of waves used was: 1 
+
+The first wave started at 19 minutes after earthquake 
+
+The highest Gauge data above MHW in each wave: 
+[8.5079709999999995] 
+
+The data for CSZBe01r07 to use with pattern_yearly_run.py: A and Gplot optional 
+A=9.547774 
+Gplot=True 
+waves_indices=[[0, 17]] 
+waves_adjust=[0.0] 
+ 

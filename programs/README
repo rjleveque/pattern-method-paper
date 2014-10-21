@@ -1,0 +1,74 @@
+On March 3,2014, we sent the adamstide.pdf to the Natural Hazards journal.
+
+On October 14,2014, a modified paper was accepted to the Natural Hazards journal.
+
+In the programs directory you will find python programs related to the paper 
+with typical input and output as described below.
+
+
+   THE (2) PATTERN-METHOD PROGRAMS: (Illustrated for a typical Cascadia
+                                     Bandon source called CSZBe01r07)
+
+   1. pattern_fromgauge.py: Driver and program to create the pattern
+
+      run:    python pattern_fromgauge.py CSZBe01r07
+
+      input:  User edits the top of this code as indicated to select parameters
+              gauge101_t_eta.txt (tsunami CSZBe01r07 Geoclaw gauge time series) 
+    
+      output: pattern.txt  job run history, last two lines give the pattern
+                           (waves_indices and waves_adjust) to be input to 
+                           pattern_yearly_run.py and the amplitude
+                           A will be output as the 4th line from the bottom
+                           of this file. 
+
+              pattern.png  plot of the pattern on top of the time series 
+
+   2. pattern_yearly_run.py: Driver to make cumulative distribution from pattern
+
+              run:    python pattern_yearly_run.py CSZBe01r07
+
+              calls:  pattern_yearly.py
+
+              input:  predicted.npy (yearly tidal data file for Crescent City)
+
+                      User specifies which tsunami, and other data including
+                      the pattern in waves_indices and waves_adjust
+
+                      Optionally, one can specify the amplitude and whether 
+                      the G-Method plots should be included on the plots for
+                      comparison. See the present setup under the CSZBe01r07
+                      tsunami in the code pattern_yearly_run.py. The amplitude
+                      A is not needed to make the pattern, but it is required
+                      to find the pdf and cumulative distributions for the
+                      G-Method. These optional parameters are called A and
+                      Gplot in the code.  If used, A should be in meters and
+                      Gplot=True. This amplitude A is written out in the 4th
+                      the 4th line from the bottom of file pattern.txt and
+                      Gplot=True is on the 3rd line from the bottom, in case
+                      these choices are desired.
+ 
+                   
+              output: pattern_yearly_run.output (history of job run)
+                      pdf_pattern.txt           (pdf)
+                      cumulative_pattern.txt    (cumulative distribution)
+                      pdf_pattern.png           (plot of pdf)
+                      cumulative_pattern.png    (plot of cumulative)
+
+   EXAMPLE PROGRAMS (3) FOR PLOTS:
+
+             1. PsiFromZandPhi.py:       Creates plot for paper
+                     run:    python PsiFromZandPhi.py
+                     input:  cumulative_probs.yearly.100.txt 
+                     output: PsiFromZandPhi.png 
+
+             2. tidepofzeta_pattern.py:  Creates example figure
+                     run:    python tidepofzeta_pattern.py
+                     input:  cumulative_pattern.txt 
+                     output: tidepofzeta_pattern.png    
+
+             3. tidepofzeta_dt.py:       Creates example figure
+                     run:    python tidepofzeta_dt.py
+                     input:  cumulative_probs.yearly.100.txt
+                     output: tidepofzeta_dt.png        
+
